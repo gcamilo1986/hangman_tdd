@@ -56,4 +56,4 @@ steps:
     WebAppName: 'aaaaasdsasas'
     deployToSlotOrASE: true
     SlotName: 'production'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/dist/hangman_tdd'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/dist'
