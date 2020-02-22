@@ -47,6 +47,7 @@ steps:
     ArtifactName: 'web-app'
     publishLocation: 'Container'
   displayName: 'Publish Artifacts'  
+
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
@@ -54,3 +55,4 @@ steps:
     appType: 'webAppLinux'
     WebAppName: 'hangmantddtest1031'
     packageForLinux: '$(System.DefaultWorkingDirectory)/dist'
+    
