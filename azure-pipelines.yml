@@ -47,13 +47,10 @@ steps:
     ArtifactName: 'web-app'
     publishLocation: 'Container'
   displayName: 'Publish Artifacts'  
-
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
-    azureSubscription: 'Azure subscription 1(21f4b2f0-3711-4b83-b5ca-0f77eec963d4)'
-    appType: 'webApp'
-    WebAppName: 'aaaaasdsasas'
-    deployToSlotOrASE: true
-    SlotName: 'production'
+    azureSubscription: 'Azure subscription 1(1)(21f4b2f0-3711-4b83-b5ca-0f77eec963d4)'
+    appType: 'webAppLinux'
+    WebAppName: 'hangmantddtest1031'
     packageForLinux: '$(System.DefaultWorkingDirectory)/dist'
